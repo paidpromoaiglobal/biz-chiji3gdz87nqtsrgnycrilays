@@ -81,50 +81,35 @@ section{padding:72px 5vw}
 .sec-sub{color:#64748b;font-size:.94rem;max-width:500px;margin:0 auto}
 /* ENQUIRY */
 .enquiry-bg{background:#F8F5EF}
-.enquiry-card{display:grid;grid-template-columns:1fr;border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(23,43,77,.1);background:#fff}
-@media(min-width:860px){.enquiry-card{grid-template-columns:.85fr 1.15fr}}
-.enquiry-side{position:relative;background:#FBF8F2;padding:44px 36px;overflow:hidden;border-right:1px solid #efe6d4}
-.enquiry-leaf{position:absolute}
-.enquiry-leaf-tl{top:0;left:0}
-.enquiry-leaf-bl{bottom:0;left:0}
-.enquiry-logo{position:relative;width:56px;height:56px;border-radius:50%;background:#fff;border:1.5px solid #B8934A;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
-.enquiry-brand{position:relative;font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:#7A1F3D;letter-spacing:.01em;line-height:1.15}
-.enquiry-brand-line2{position:relative;font-size:1.2rem;font-weight:800;color:#263238;letter-spacing:.02em;margin-bottom:6px}
-.enquiry-brand-sub{position:relative;font-size:.72rem;letter-spacing:.1em;color:#7A1F3D;font-weight:600;margin-bottom:22px}
-.enquiry-tagline{position:relative;font-family:'Playfair Display',serif;font-size:1.55rem;font-weight:800;margin-bottom:12px;letter-spacing:-.01em;color:#263238}
-.enquiry-tagline em{font-style:italic;color:#7A1F3D}
-.enquiry-side-text{position:relative;font-size:.88rem;color:#64748b;line-height:1.6;margin-bottom:26px}
-.enquiry-features{position:relative;list-style:none;display:flex;flex-direction:column;gap:16px;margin-bottom:28px}
-.enquiry-features li{display:flex;align-items:flex-start;gap:12px}
-.enquiry-features li span{width:38px;height:38px;flex-shrink:0;border-radius:50%;background:#F3E9D4;color:#7A1F3D;display:flex;align-items:center;justify-content:center;font-size:1.05rem}
-.enquiry-features li strong{display:block;font-size:.88rem;font-weight:700;color:#7A1F3D}
-.enquiry-features li small{display:block;font-size:.76rem;color:#8b95a0;margin-top:2px;font-weight:400}
-.enquiry-divider{position:relative;border-top:1px dashed #ddd0b0;margin-bottom:18px}
-.enquiry-footer-note{position:relative;font-size:.9rem;font-weight:700;text-align:center;color:#7A1F3D;line-height:1.5}
+.enquiry-card{display:grid;grid-template-columns:1fr;border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(23,43,77,.1);background:#fff;max-width:640px;margin:0 auto}
+.enquiry-top-brand{text-align:center;margin-bottom:22px}
+.enquiry-brand{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:800;color:#7A1F3D;letter-spacing:.01em;line-height:1.15}
+.enquiry-brand-line2{font-size:1.2rem;font-weight:800;color:#263238;letter-spacing:.02em;margin-bottom:6px}
+.enquiry-brand-sub{font-size:.72rem;letter-spacing:.1em;color:#7A1F3D;font-weight:700}
 .enquiry-form-side{padding:40px 36px}
-.enquiry-form-head{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.enquiry-form-head{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:10px}
 .enquiry-form-icon{width:44px;height:44px;border-radius:50%;background:#7A1F3D;color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.15rem;flex-shrink:0}
 .enquiry-form-head h2{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:800;color:#263238;letter-spacing:-.01em}
-.enquiry-form-sub{color:#64748b;font-size:.88rem;margin-bottom:26px;line-height:1.6}
+.enquiry-form-sub{color:#263238;font-weight:700;text-align:center;font-size:.88rem;margin-bottom:26px;line-height:1.6}
 .ef-row{display:grid;grid-template-columns:1fr;gap:0}
 @media(min-width:560px){.ef-row{grid-template-columns:1fr 1fr;gap:16px}}
 .ef-field{margin-bottom:16px}
-.ef-field label{display:block;font-size:.82rem;font-weight:700;color:#263238;margin-bottom:6px}
+.ef-field label{display:block;font-size:.82rem;font-weight:800;color:#263238;margin-bottom:6px}
 .ef-field .req{color:#7A1F3D}
 .ef-input-wrap{display:flex;align-items:center;border:1.5px solid #e2e8f0;border-radius:10px;padding:0 14px;background:#fff;transition:border-color .2s}
 .ef-input-wrap:focus-within{border-color:#7A1F3D}
 .ef-icon{margin-right:10px;font-size:.95rem;flex-shrink:0}
 .ef-icon-top{align-self:flex-start;margin-top:12px}
-.ef-prefix{color:#64748b;font-weight:600;font-size:.88rem;margin-right:8px;border-right:1px solid #e2e8f0;padding-right:10px}
-.ef-input-wrap input,.ef-input-wrap select,.ef-input-wrap textarea{border:none;outline:none;padding:12px 0;font-family:inherit;font-size:.88rem;color:#263238;width:100%;background:transparent}
+.ef-prefix{color:#263238;font-weight:800;font-size:.88rem;margin-right:8px;border-right:1px solid #e2e8f0;padding-right:10px}
+.ef-input-wrap input,.ef-input-wrap select,.ef-input-wrap textarea{border:none;outline:none;padding:12px 0;font-family:inherit;font-weight:700;font-size:.88rem;color:#263238;width:100%;background:transparent}
 .ef-input-wrap textarea{resize:vertical;min-height:90px;padding-top:12px}
 .ef-input-wrap-ta{align-items:flex-start;position:relative}
-.ef-counter{text-align:right;font-size:.72rem;color:#94a3b8;margin-top:4px}
-.ef-consent{display:flex;align-items:flex-start;gap:8px;font-size:.82rem;color:#475569;margin:6px 0 20px;cursor:pointer}
+.ef-counter{text-align:right;font-size:.72rem;color:#94a3b8;margin-top:4px;font-weight:700}
+.ef-consent{display:flex;align-items:flex-start;gap:8px;font-size:.82rem;color:#263238;font-weight:700;margin:6px 0 20px;cursor:pointer}
 .ef-consent input{margin-top:3px;accent-color:#7A1F3D;width:15px;height:15px}
-.ef-submit{width:100%;background:#7A1F3D;color:#fff;border:none;padding:15px;border-radius:10px;font-weight:700;font-size:.95rem;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;transition:transform .15s,box-shadow .15s;display:flex;align-items:center;justify-content:center;gap:8px}
+.ef-submit{width:100%;background:#7A1F3D;color:#fff;border:none;padding:15px;border-radius:10px;font-weight:800;font-size:.95rem;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;transition:transform .15s,box-shadow .15s;display:flex;align-items:center;justify-content:center;gap:8px}
 .ef-submit:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(122,31,61,.32)}
-.ef-note{text-align:center;color:#94a3b8;font-size:.76rem;margin-top:14px;line-height:1.5}
+.ef-note{text-align:center;color:#263238;font-weight:700;font-size:.76rem;margin-top:14px;line-height:1.5}
 /* ABOUT */
 .about-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
 @media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
@@ -285,26 +270,12 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
 <section class="enquiry-bg" id="enquiry">
   <div class="container">
     <div class="enquiry-card" data-r>
-      <div class="enquiry-side">
-        <svg class="enquiry-leaf enquiry-leaf-tl" width="90" height="90" viewBox="0 0 90 90" fill="none"><path d="M4 4c10 20 8 40 30 46M4 4c20 10 40 8 46 30M4 4c6 26-2 48 20 66" stroke="#B8934A" stroke-width="1.4" opacity=".35"/></svg>
-        <svg class="enquiry-leaf enquiry-leaf-bl" width="90" height="90" viewBox="0 0 90 90" fill="none"><path d="M4 86c10-20 8-40 30-46M4 86c20-10 40-8 46-30M4 86c6-26-2-48 20-66" stroke="#B8934A" stroke-width="1.4" opacity=".35"/></svg>
-        <div class="enquiry-logo">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7A1F3D" stroke-width="1.6"><path d="M4 5.5c3-1.2 6-1.2 8 0v13c-2-1.2-5-1.2-8 0z"/><path d="M20 5.5c-3-1.2-6-1.2-8 0v13c2-1.2 5-1.2 8 0z"/><path d="M17 3.5l3.5-2M18.6 3.2l1 3.4-3.4-.4z" stroke="#B8934A"/></svg>
-        </div>
-        <h3 class="enquiry-brand">RAKHI BALA'S</h3>
-        <h4 class="enquiry-brand-line2">HINDI TUTORIAL</h4>
-        <p class="enquiry-brand-sub">— (Live Online Class) —</p>
-        <h2 class="enquiry-tagline">Learn. Practice. <em>Excel.</em></h2>
-        <p class="enquiry-side-text">Learn Hindi with expert guidance from the comfort of your home.</p>
-        <ul class="enquiry-features">
-          <li><span>🖥️</span><div><strong>Live Interactive Classes</strong><small>Engaging &amp; Effective Learning</small></div></li>
-          <li><span>👤</span><div><strong>Personal Attention</strong><small>Focus on Every Student</small></div></li>
-          <li><span>🏅</span><div><strong>All Learning Levels</strong><small>School, Exam &amp; Spoken Hindi</small></div></li>
-        </ul>
-        <div class="enquiry-divider"></div>
-        <p class="enquiry-footer-note">✦ Your Hindi Journey<br>Starts Here. ✦</p>
-      </div>
       <div class="enquiry-form-side">
+        <div class="enquiry-top-brand">
+          <h3 class="enquiry-brand">RAKHI BALA'S</h3>
+          <h4 class="enquiry-brand-line2">HINDI TUTORIALS</h4>
+          <p class="enquiry-brand-sub">— (Live Online Class) —</p>
+        </div>
         <div class="enquiry-form-head">
           <span class="enquiry-form-icon">📋</span>
           <h2>Make an Enquiry</h2>
