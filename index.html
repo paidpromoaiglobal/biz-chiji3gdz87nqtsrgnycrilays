@@ -41,20 +41,15 @@ body{font-family:'Plus Jakarta Sans',sans-serif;color:#263238;background:#fff;-w
 [data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
 [data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
 .nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
-nav{position:fixed;top:0;left:0;right:0;z-index:900;background:#14263F;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:76px;transition:box-shadow .3s}
-.nav-brand-group{display:flex;align-items:center;gap:10px;min-width:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:#14263F;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:76px;transition:box-shadow .3s;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+.nav-brand-group{display:flex;align-items:center;gap:10px;min-width:0;flex-shrink:0}
 .nav-brand-text{display:flex;flex-direction:column;line-height:1.25;min-width:0}
 .nav-brand-name{color:#B8934A;font-weight:800;font-size:clamp(.95rem,3vw,1.2rem);letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .nav-brand-sub{color:#fff;font-weight:700;font-size:clamp(.62rem,1.9vw,.76rem);letter-spacing:.09em;white-space:nowrap}
-.nav-links{display:none;align-items:center;gap:26px}
-@media(min-width:900px){.nav-links{display:flex}}
-.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .2s}
+.nav-links{display:flex;align-items:center;gap:22px;flex-shrink:0;margin-left:24px}
+.nav-links a{color:rgba(255,255,255,.82);text-decoration:none;font-size:.84rem;font-weight:500;transition:color .2s;white-space:nowrap}
 .nav-links a:hover{color:#B8934A}
-.nav-actions{display:flex;align-items:center;gap:10px;flex-shrink:0}
-.nav-call{display:none;border:1.5px solid rgba(255,255,255,.35);color:#fff;padding:8px 18px;border-radius:8px;text-decoration:none;font-size:.8rem;font-weight:600;white-space:nowrap}
-@media(min-width:640px){.nav-call{display:inline-block}}
-.nav-cta{background:#25d366;color:#fff;padding:11px 18px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:700;white-space:nowrap;transition:opacity .2s}
-.nav-cta:hover{opacity:.88}
 /* HERO */
 .hero{position:relative;padding:120px 5vw 60px;background:#F8F5EF;overflow:hidden}
 .hero-grid{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
@@ -208,10 +203,6 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
     <a href="#enquiry">Live Classes</a>
     <a href="#testimonials">Testimonials</a>
     <a href="#contact">Contact Us</a>
-  </div>
-  <div class="nav-actions">
-    <a href="tel:+918667879712" class="nav-call">📞 Call Us</a>
-    <a href="https://wa.me/918667879712?text=Hello!%20I%20found%20Rakhi%20Bala's%20Hindi%20Tutorial%20online%20and%20I%20am%20interested%20in%20joining%20Hindi%20classes.%20Could%20you%20please%20share%20details%20about%20the%20available%20batches%2C%20fees%2C%20and%20how%20to%20enrol%3F%20Thank%20you!" class="nav-cta">💬 WhatsApp</a>
   </div>
 </nav>
 
