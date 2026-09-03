@@ -60,7 +60,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;background:#14263F;padding:0
 .btn-o{background:#fff;border:1.5px solid #dcd3c4;color:#263238;padding:13px 26px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.88rem;transition:background .2s}
 .btn-o:hover{background:#f3ede0}
 .hero-badges{display:flex;flex-wrap:wrap;gap:10px 18px}
-.hero-badges span{font-size:.78rem;color:#54606b;font-weight:700;display:inline-flex;align-items:center;gap:6px}
+.hero-badges span{font-size:.8rem;color:#263238;font-weight:800;display:inline-flex;align-items:center;gap:6px}
 .hero-photo-wrap{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 24px 56px rgba(23,43,77,.18)}
 .hero-slideshow{position:relative;width:100%;height:100%}
 .hero-slideshow img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.2s ease}
@@ -129,7 +129,7 @@ section{padding:72px 5vw}
 .about-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
 @media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
 .about-img-wrap{border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.1)}
-.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:8% 38%;display:block}
+.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center 15%;display:block}
 .about-text p{color:#475569;line-height:1.84;margin-bottom:13px;font-size:.93rem;font-weight:400}
 .hl-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:8px}
 .hl-list li{padding:10px 14px 10px 36px;position:relative;background:#f8fafc;border-radius:8px;color:#334155;font-size:.87rem;border-left:3px solid #B8934A}
@@ -184,11 +184,10 @@ section{padding:72px 5vw}
 /* FOOTER */
 footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-size:.8rem}
 .footer-brand{color:#c7d0dc;font-weight:700;font-size:.88rem;margin-bottom:6px}
-.footer-social{display:flex;justify-content:center;gap:12px;margin-top:16px}
-.footer-social a{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .2s,box-shadow .2s}
-.footer-social a:hover{transform:translateY(-2px)}
-.footer-social-ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
-.footer-social-wa{background:#25d366}
+.footer-ig-line{display:inline-flex;align-items:center;gap:7px;margin-top:14px;color:#B8934A;text-decoration:none;font-size:.82rem;font-weight:600}
+.footer-ig-line:hover{opacity:.85}
+.ig-fab{position:fixed;bottom:92px;right:24px;z-index:9999;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(214,36,159,.4);text-decoration:none;transition:transform .2s,box-shadow .2s}
+.ig-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(214,36,159,.5)}
 </style>
 </head>
 <body>
@@ -248,7 +247,7 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
   <div class="container">
     <div class="about-wrap">
       <div class="about-img-wrap" data-r>
-        <img src="./1.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" class="about-img" loading="lazy">
+        <img src="./8.png" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" class="about-img" loading="lazy">
       </div>
       <div data-r data-d="2">
         <p class="sec-eyebrow">About Us</p>
@@ -283,7 +282,7 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
   </div>
 </div>
 
-<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./img/photo-0.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-1.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-2.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-3.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-4.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&fit=crop&auto=format'"><img src="./1.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy"></div></div></section>
+<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./img/photo-0.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-1.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-2.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-3.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-4.jpg" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&fit=crop&auto=format'"><img src="./8.png" alt="RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)" loading="lazy"></div></div></section>
 
 <section class="enquiry-bg" id="enquiry">
   <div class="container">
@@ -457,15 +456,14 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
 <footer>
   <div class="footer-brand">RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)</div>
   <div>© 2026 · opposite RKR Grks School, 5, Udumalpet - Dharapuram Rd, Prem Layout, Min Nagar, Periakottai, Tamil Nadu 642126, India</div>
-  <div class="footer-social">
-    <a href="#" id="ig-footer-link" class="footer-social-ig" aria-label="Instagram">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="white" stroke="none"/></svg>
-    </a>
-    <a href="https://wa.me/918667879712?text=Hello!%20I%20found%20Rakhi%20Bala's%20Hindi%20Tutorial%20online%20and%20I%20am%20interested%20in%20joining%20Hindi%20classes.%20Could%20you%20please%20share%20details%20about%20the%20available%20batches%2C%20fees%2C%20and%20how%20to%20enrol%3F%20Thank%20you!" class="footer-social-wa" aria-label="WhatsApp">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-  </div>
+  <a href="#" id="ig-footer-link" class="footer-ig-line">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8934A" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="#B8934A" stroke="none"/></svg>
+    Follow us on Instagram
+  </a>
 </footer>
+<a href="#" id="ig-fab-link" class="ig-fab" aria-label="Instagram">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="white" stroke="none"/></svg>
+</a>
 <a href="https://wa.me/918667879712?text=Hello!%20I%20found%20Rakhi%20Bala's%20Hindi%20Tutorial%20online%20and%20I%20am%20interested%20in%20joining%20Hindi%20classes.%20Could%20you%20please%20share%20details%20about%20the%20available%20batches%2C%20fees%2C%20and%20how%20to%20enrol%3F%20Thank%20you!" class="wa-fab" aria-label="WhatsApp">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
