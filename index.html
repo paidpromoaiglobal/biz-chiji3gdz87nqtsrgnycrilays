@@ -22,6 +22,14 @@
 <meta name="twitter:image" content="https://biz-chiji3gdz87nqtsrgnycrilays.vercel.app/img/photo-0.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)","description":"Join Rakhi Bala's Live Online Hindi Tutorial in Periakottai, Tamil Nadu. Rated 4.9/5 by students. Beginner to advanced Hindi classes available 7 days a week. Enrol today!","url":"https://biz-chiji3gdz87nqtsrgnycrilays.vercel.app/","telephone":"+08667879712","address":{"@type":"PostalAddress","streetAddress":"opposite RKR Grks School, 5, Udumalpet - Dharapuram Rd, Prem Layout, Min Nagar, Periakottai, Tamil Nadu 642126, India","addressLocality":"Tamil Nadu 642126","addressCountry":"IN"},"image":"https://biz-chiji3gdz87nqtsrgnycrilays.vercel.app/img/photo-0.jpg","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"49"}}</script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Rakhi Bala's Hindi Tutorial">
+<meta name="mobile-web-app-capable" content="yes">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -172,6 +180,17 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
 .footer-brand{color:#c7d0dc;font-weight:700;font-size:.88rem;margin-bottom:6px}
 .ig-fab{position:fixed;bottom:92px;right:24px;z-index:9999;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%);width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(214,36,159,.4);text-decoration:none;transition:transform .2s,box-shadow .2s}
 .ig-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(214,36,159,.5)}
+/* APP TAB BAR (mobile, native-app style) */
+.app-tabbar{display:none}
+@media(max-width:899px){
+  .app-tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:9998;background:#14263F;padding:6px 2px calc(6px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,.25);border-top:1px solid rgba(255,255,255,.06)}
+  .app-tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;text-decoration:none;color:rgba(255,255,255,.55);padding:6px 2px;font-size:.62rem;font-weight:700;letter-spacing:.01em;transition:color .2s}
+  .app-tab .app-tab-ic{font-size:1.15rem;line-height:1}
+  .app-tab.is-active{color:#B8934A}
+  body{padding-bottom:64px}
+  .wa-fab{bottom:88px}
+  .ig-fab{bottom:156px}
+}
 </style>
 </head>
 <body>
@@ -427,6 +446,13 @@ footer{background:#14263F;color:#c7d0dc;padding:28px 5vw;text-align:center;font-
   <div class="footer-brand">RAKHI BALA'S HINDI TUTORIAL (LIVE ONLINE CLASS)</div>
   <div>© 2026 · opposite RKR Grks School, 5, Udumalpet - Dharapuram Rd, Prem Layout, Min Nagar, Periakottai, Tamil Nadu 642126, India</div>
 </footer>
+<nav class="app-tabbar" id="appTabbar">
+  <a href="#top" class="app-tab" data-tab="top"><span class="app-tab-ic">🏠</span>Home</a>
+  <a href="#about" class="app-tab" data-tab="about"><span class="app-tab-ic">ℹ️</span>About</a>
+  <a href="#courses" class="app-tab" data-tab="courses"><span class="app-tab-ic">📚</span>Courses</a>
+  <a href="#enquiry" class="app-tab" data-tab="enquiry"><span class="app-tab-ic">📋</span>Enquiry</a>
+  <a href="#contact" class="app-tab" data-tab="contact"><span class="app-tab-ic">📞</span>Contact</a>
+</nav>
 <a href="javascript:void(0)" id="ig-fab-link" class="ig-fab" aria-label="Instagram">
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1.1" fill="white" stroke="none"/></svg>
 </a>
@@ -487,5 +513,26 @@ if(window.innerWidth>768){
     if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}
   },{passive:true});
 }
+// App tab bar active-state (scroll-spy)
+(function(){
+  var tabbar=document.getElementById('appTabbar');
+  if(!tabbar)return;
+  var tabs=tabbar.querySelectorAll('.app-tab');
+  var sections=[];
+  tabs.forEach(function(t){
+    var sec=document.getElementById(t.getAttribute('data-tab'));
+    if(sec)sections.push({tab:t,el:sec});
+  });
+  if(!sections.length)return;
+  function setActive(){
+    var pos=window.scrollY+120;
+    var current=sections[0];
+    sections.forEach(function(s){if(s.el.offsetTop<=pos)current=s;});
+    tabs.forEach(function(t){t.classList.remove('is-active');});
+    current.tab.classList.add('is-active');
+  }
+  window.addEventListener('scroll',setActive,{passive:true});
+  setActive();
+})();
 </script>
 </body></html>
